@@ -1,0 +1,50 @@
+div, nav, ul, footer, header {
+    background-color: silver;
+}
+main{
+    display: grid;
+    grid-gap:10px;
+    max-width: 960px;
+    margin: 20px auto;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 70px 300px 50px auto;
+    
+}
+#logo   {grid-row: 1/2; grid-column: 1 / span 3}
+nav {grid-row: 1/2; grid-column: 7 / span 6}
+header {grid-row: 2/3; grid-column: 1 / span 12}
+#title1 {grid-row: 3/4; grid-column: 1 / span 3; }
+#title2 {grid-row: 3/4; grid-column: 7 / span 3; }
+#blogPost1 {grid-row: 4/5; grid-column: 1 / span 6; height: 150px;}
+#featuredProduct1 {grid-row: 4/5; grid-column: 7 / span 3; height: 150px;}
+#featuredProduct2 {grid-row: 4/5; grid-column: 10 / span 3; height: 150px;}
+#blogPost2 {grid-row: 5/6; grid-column: 1 / span 6; height: 150px;}
+#featuredProduct3 {grid-row: 5/6; grid-column: 7 / span 3; height: 150px;}
+#featuredProduct4 {grid-row: 5/6; grid-column: 10 / span 3; height: 150px;}
+footer {grid-row: 6/7; grid-column: 1 / span 12}
+main 
+a {
+    color: black;
+    text-decoration: none;
+}
+nav {
+    align-self: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: center;
+}
+header{
+    padding: 30px 20px 30px 20px;
+}
+footer {
+    text-align: center;
+    align-content: center;			
+}

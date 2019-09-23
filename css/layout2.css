@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+    max-width: 960px;
+    display: grid;
+    grid-gap:10px;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px 220px auto 50px;
+    grid-template-areas:
+				"logo .    nav  nav"
+				"head head head head"
+				"main main main main"
+				"footer footer footer footer";        
+}
+
+
+div, nav ul, footer, a {
+    background: silver;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#logo {
+    grid-area: logo;
+}
+nav {
+    grid-area: nav;
+    align-self: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-content: center;
+}
+header {
+    grid-area: head;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 10px;
+    grid-template: repeat(3, 160px) / repeat(3, 1fr);
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+}
